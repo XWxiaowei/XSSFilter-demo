@@ -1,10 +1,9 @@
-# XSSFilter-demo
 ## 摘要
 本次处理富文本框XSS注入，后端处理采用的是jsoup框架。GitHub 中的地址：https://jsoup.org/
 其是Java世界的一款HTML解析工具，它支持用CSS Selector方式选择DOM元素，也可过滤HTML文本，防止XSS攻击。
 ## 如何使用
 ### 1. 引入依赖
-```xml
+``` 
   <dependency>
       <!-- jsoup HTML parser library @ https://jsoup.org/ -->
       <groupId>org.jsoup</groupId>
@@ -14,7 +13,7 @@
 ```
 ### 2. 将HTMLStringFilter 加入到项目中
 本demo中使用的白名单是jsoup 框架自带的白名单，其核心逻辑如下；
-```java
+```
     /**
      * 采用jsoup白名单方式过滤非法的html字符。
      * 原理：
@@ -45,5 +44,4 @@ legalImage.url=https://rs.jss.com.cn;https://www.jss.com.cn
 ```
 ### 4. 使用
 **将需要过滤的存入富文本字段传入cleanSafeHtml方法即可。**
-
 
