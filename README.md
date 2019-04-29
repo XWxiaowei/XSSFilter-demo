@@ -41,7 +41,7 @@
 ``` #是否开启图片校验
 image.valid.open=true
 #合法的图片域名(每个域名都要完全匹配,一个匹配项都没有找到，则提示异常)
-legalImage.url=https://rs.jss.com.cn;https://www.jss.com.cn
+legalImage.url=https://yyy.com.cn;https://www.xxx.com.cn
 ```
 ### 4. 使用
 **将需要过滤的存入富文本字段传入cleanSafeHtml方法即可。**
